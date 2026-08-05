@@ -1,0 +1,29 @@
+ACTUALIZADOR DE CRÉDITOS — VERSIÓN PARA WINDOWS
+
+CONTENIDO
+- actualizar_creditos_app.pyw: ventana gráfica de uso diario.
+- actualizar_creditos_vista_operativa.py: motor de conciliación.
+- GENERAR_EXE_WINDOWS.bat: crea el ejecutable de Windows.
+
+CÓMO CREAR EL .EXE
+1. Copie los tres archivos a una misma carpeta de una computadora Windows.
+2. Instale Python 3.11 o superior y marque “Add Python to PATH”.
+3. Haga doble clic en GENERAR_EXE_WINDOWS.bat.
+4. Espere a que termine la instalación y compilación.
+5. El ejecutable aparecerá en:
+   dist\Actualizar_Creditos_SIGNO.exe
+
+USO DIARIO DEL EJECUTABLE
+1. Haga doble clic en Actualizar_Creditos_SIGNO.exe.
+2. Seleccione el reporte exportado de SIGNO.
+3. Seleccione el archivo Créditos actuales más reciente.
+4. Confirme dónde guardar el resultado.
+5. Pulse “Actualizar créditos”.
+
+El programa no sobrescribe los archivos de entrada.
+
+IMPORTANTE
+El ejecutable debe construirse en Windows. Un .exe de Windows no puede generarse de
+forma confiable desde el entorno Linux donde se prepararon estos archivos. Una vez
+compilado en una PC Windows, el .exe puede copiarse a otras computadoras Windows sin
+instalar Python.

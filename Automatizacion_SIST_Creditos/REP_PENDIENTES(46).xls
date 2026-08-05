@@ -1,0 +1,3118 @@
+
+    <html xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+    <meta http-equiv=Content-Type content="application/vnd.ms-excel; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 11">
+    <!--[if gte mso 9]><xml>
+     <o:DocumentProperties>
+      <o:Author>Pat Willener</o:Author>
+      <o:Company>Good Day Books</o:Company>
+     </o:DocumentProperties>
+     <o:OfficeDocumentSettings>
+      <o:RelyOnVML/>
+      <o:AllowPNG/>
+     </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+    <style>
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+
+        <!--mso-page-orientation:landscape;} -->
+	@page {
+	margin:.0in .0in .0in .0in;
+	mso-header-margin:.0in;
+	mso-footer-margin:.0in;
+	mso-page-orientation:portrait;
+	mso-footer-data:"Pagina &p";
+    margin:.2in .3in .2in .3in;
+	}
+
+	@print {
+	margin:.0in .0in .0in .0in;
+	mso-header-margin:.0in;
+	mso-footer-margin:.0in;
+	mso-page-orientation:portrait;
+	mso-footer-data:"Pagina &p";
+    margin:.2in .3in .2in .3in;
+	}
+
+    tr
+        {mso-height-source:auto;}
+    col
+        {mso-width-source:auto;}
+    br
+        {mso-data-placement:same-cell;}
+    .style0
+        {mso-number-format:General;
+        text-align:general;
+        vertical-align:bottom;
+        white-space:nowrap;
+        mso-rotate:0;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        color:windowtext;
+        font-size:10.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Tahoma;
+        mso-generic-font-family:auto;
+        mso-font-charset:128;
+        border:none;
+        mso-protection:locked visible;
+        mso-style-name:Normal;
+        mso-style-id:0;}
+    td
+        {mso-style-parent:style0;
+        /*
+        padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;*/
+        mso-ignore:padding;
+        color:windowtext;
+        font-size:10.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Tahoma;
+        mso-generic-font-family:auto;
+        mso-font-charset:128;
+        mso-number-format:General;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        mso-protection:locked visible;
+        mso-rotate:0;
+        overflow:hidden;}
+
+    .titulos{font-size:12px;}
+    .titulos2{font-size:12px;font-weight:bold;}
+    .titulos3{font-size:12px;font-weight:bold;}
+    -->
+    </style>
+    <!--[if gte mso 9]><xml>
+     <x:ExcelWorkbook>
+    <x:ExcelWorksheets>
+    <x:ExcelWorksheet>
+    <x:WorksheetOptions>
+    <x:DisplayPageBreak/>
+    <x:FitToPage/>
+    <x:Print>
+    <x:FitWidth>1</x:FitWidth>
+    <x:FitHeight>1000</x:FitHeight>
+    <x:ValidPrinterInfo/>
+    <x:VerticalResolution>0</x:VerticalResolution>
+    </x:Print>
+    <x:Selected/>
+    <x:FreezePanes/>
+    <x:FrozenNoSplit/>
+    <x:SplitHorizontal>1</x:SplitHorizontal>
+    <x:TopRowBottomPane>1</x:TopRowBottomPane>
+    <x:ActivePane>2</x:ActivePane>
+    <x:Panes>
+    <x:Pane>
+    <x:Number>3</x:Number>
+    </x:Pane>
+    <x:Pane>
+    <x:Number>2</x:Number>
+    </x:Pane>
+    </x:Panes>
+    <x:DisplayZeros/>
+    <x:DisplayHeadings/>
+    <x:DisplayOutline/>
+    </x:WorksheetOptions>
+    </x:ExcelWorksheet>
+    </x:ExcelWorksheets>
+     </x:ExcelWorkbook>
+    </xml><![endif]-->
+    </head>
+
+    <body lang=EN-US style='tab-interval:.5in'>
+    <div class=Section1>
+	<table width="800" bordercolor="#333333"  BORDER="1" align="center" CELLPADDING="0" CELLSPACING="0">
+        <tr>
+    		<td colspan="13" height="20" valign="middle" align="center"><span class='titulos3'><b>NOTARIA SOFIA INES ODE PEREYRA</b></span></td>
+        </tr>
+        <tr>
+    		<td colspan="13" height="20" valign="middle" align="center"><span class='titulos3'><b>Reporte de Comprobantes Pendientes de Cancelar del 01/01/2024 al  04/08/2026 </b></span></td>
+        </tr>
+
+
+    <tr>
+		<th align="left" width="8%"><span class="titulos">RUC</span></th>
+		<th align="left" width="8%"><span class="titulos">GRUPO</span></th>
+		<th align="left" width="8%"><span class="titulos">EMISION</span></th>
+		<th align="left" width="10%"><span class="titulos">TIPO</span></th>
+		<th align="left" width="40%"><span class="titulos">SERIE A</span></th>
+		<th align="left" width="16%"><span class="titulos">DOC</span></th>
+		<th align="left" width="16%"><span class="titulos">CLIENTE</span></th>
+		<th align="left" width="16%"><span class="titulos">KARDEX</span></th>
+		<th align="left" width="16%"><span class="titulos">FACTURADO</span></th>
+		<th align="left" width="9%"><span class="titulos">SALDO</span></th>
+		<th align="left" width="9%"><span class="titulos">VENCIMIENTO</span></th>
+		<th align="left" width="9%"><span class="titulos">EMPLEADO</span></th>
+		<th align="left" width="9%"><span class="titulos">COMENTARIOS</span></th>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545188202</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029634</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1491.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1312.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545188202</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029636</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1379.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1379.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545188202</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029638</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1428.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1257.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545188202</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029643</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ABSOLUTE GAMES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1386.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1220.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20616223314</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ALERCES CONSTRUCTORA S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004128</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ALERCES CONSTRUCTORA S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66951</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20616223314</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ALERCES CONSTRUCTORA S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030012</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ALERCES CONSTRUCTORA S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66951</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20614040174</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ASOCIACION CIVIL MUNDO YANASHPA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028368</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ASOCIACION CIVIL MUNDO YANASHPA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">29/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">44084479</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ASTETE HERENCIA WILLIAM HERBERT</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/04/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">B</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0060716</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ASTETE HERENCIA WILLIAM HERBERT</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K61628</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">500.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/04/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">44084479</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ASTETE HERENCIA WILLIAM HERBERT</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/04/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028352</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ASTETE HERENCIA WILLIAM HERBERT</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K61628</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1867.62</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">20.38</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/04/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100047218</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10/04/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0025603</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K64096</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">850.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">748.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10/05/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100047218</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">05/06/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0026149</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K40280</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">640.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">640.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/06/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100047218</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/09/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029152</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K63430</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">178.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">178.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/10/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100047218</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/09/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029153</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BANCO DE CREDITO DEL PERU</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K63527</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">103.60</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">103.60</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">08/09/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20606998181</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		COMERCIALIZADORA POSTRES Y MAS SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">05/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029566</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">COMERCIALIZADORA POSTRES Y MAS SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100056802</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		COMPAﾃ選A MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029646</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">COMPAﾑIA MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">230.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">230.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100056802</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		COMPAﾃ選A MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029919</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">COMPAﾑIA MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">260.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">260.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100056802</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		COMPAﾃ選A MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029956</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">COMPAﾑIA MINERA CONDESTABLE S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20516488973</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		COMPAﾃ選A MINERA SANTANDER S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029994</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">COMPAﾑIA MINERA SANTANDER S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20614206471</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		CONSORCIO PP 911</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/08/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0026814</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">CONSORCIO PP 911</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1003.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1003.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/08/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20603865830</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		CONSTRUCTORA VALLE REQUE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">CONSTRUCTORA VALLE REQUE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20603865830</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		CONSTRUCTORA VALLE REQUE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">CONSTRUCTORA VALLE REQUE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">40119007</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		CONTRERAS JOAQUIN JOSE</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028760</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">CONTRERAS JOAQUIN JOSE</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C7893</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">45.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">45.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGOMEZ</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20611721812</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		DESARROLLO TACTICO SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">21/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028356</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DESARROLLO TACTICO SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">28/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20538731545</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		DIVERSIONES SKY S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029639</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DIVERSIONES SKY S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">14.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">14.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600686691</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/11/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0027839</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">125.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">125.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/12/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600686691</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/12/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028137</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600686691</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029708</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DPP CORP S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66744</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2800.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2800.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20110152711</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029722</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66911</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">400.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">400.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20110152711</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029723</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66856</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2500.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20110152711</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030863</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">E.TORRES Y TORRES LARA & ASOC.ABOG.SCRL</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66856</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">245.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">245.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20605014187</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EDIFICA INMOBILIARIA E INVERSIONES SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">13/05/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0025907</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EDIFICA INMOBILIARIA E INVERSIONES SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/05/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20546406688</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029633</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2261.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1990.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20546406688</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029635</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1750.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1540.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20546406688</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029637</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2149.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1891.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20546406688</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029642</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2604.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2292.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20546406688</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">21/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029946</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGASA PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">300.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">300.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">28/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20612320323</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ELECTRO ZAﾃ羨 II S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028709</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ELECTRO ZAﾑA II S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">66.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">66.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/03/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100117526</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ENOTRIA S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029998</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ENOTRIA S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">18974.40</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">18974.40</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">14/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100117526</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ENOTRIA S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030023</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ENOTRIA S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">14707.97</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">14707.97</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600059794</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ERW PROPERTY MANAGEMENT SERVICES S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0003968</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ERW PROPERTY MANAGEMENT SERVICES S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C8178</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">95.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">95.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DMONTOYA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600059794</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ERW PROPERTY MANAGEMENT SERVICES S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030127</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ERW PROPERTY MANAGEMENT SERVICES S.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C8178</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">DMONTOYA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09381876</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		FERRERO GHISLIERI ANDRES CARLOS</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030031</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FERRERO GHISLIERI ANDRES CARLOS</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66105</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">11/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09381876</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		FERRERO GHISLIERI ANDRES CARLOS</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030036</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FERRERO GHISLIERI ANDRES CARLOS</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66105</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">58.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">58.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">11/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604090351</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		FIBRAS UNIDAS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0003979</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FIBRAS UNIDAS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C8182</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/03/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">EGOMEZ</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601703824</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004126</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67173</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601703824</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029997</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67173</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601703824</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0031015</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67173</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601703824</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030021</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">GREEN DREAMS INMOBILIARIA Y CONSTRUCTORA S.A.C. - GREEN DREAMS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20432295754</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		HERNANDEZ & CIA. ABOGADOS SOCIEDAD CIVIL DE RESPONSABILIDAD LIMITADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/06/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0026250</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">HERNANDEZ & CIA. ABOGADOS SOCIEDAD CIVIL DE RESPONSABILIDAD LIMITADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">30.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">30.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/06/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20613705849</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028367</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">29/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20613705849</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/03/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028767</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10/03/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20613705849</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029159</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">HOLDINGD S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20611878568</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INFINITY GAMING PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/02/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028053</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INFINITY GAMING PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C7892</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">4.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">4.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/03/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MARTHA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600517571</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA LOS ALERCES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029317</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA LOS ALERCES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66540</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">375.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">375.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20600517571</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA LOS ALERCES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029469</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA LOS ALERCES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1260.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1260.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545332508</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA OCTAGON SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/09/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0027102</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA OCTAGON SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C8059</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/09/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">VASCENCIO</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601898561</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA PARDO 200 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029973</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA PARDO 200 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601898561</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA PARDO 200 SOCIEDAD ANONIMA CERRADA - INMOBILIARIA PARDO 200 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029768</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA PARDO 200 SOCIEDAD ANONIMA CERRADA - INMOBILIARIA PARDO 200 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1375.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">165.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">08/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20492778738</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA PEZET 417 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">21/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028343</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA PEZET 417 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K47337</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">05/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20547979827</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA SAN VINCENZO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/03/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028940</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA SAN VINCENZO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66608</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">2500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">300.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/03/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20547979827</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA SAN VINCENZO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029972</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA SAN VINCENZO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20517595919</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INMOBILIARIA TOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029710</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INMOBILIARIA TOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20545236371</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INVERSIONES 4SD SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/01/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0024785</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INVERSIONES 4SD SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		P5424</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">3540.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">424.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">18/01/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SOFIA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20102009623</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INVERSIONES VOLTERRA S A</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029601</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INVERSIONES VOLTERRA S A</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20538871801</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		INVERSIONES Y DESARROLLO INMOBILIARIO SANTA MARIA SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029248</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">INVERSIONES Y DESARROLLO INMOBILIARIO SANTA MARIA SOCIEDAD ANONIMA CERRADA</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1180.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">142.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20136422813</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ISOLA BRUCE ABOGADOS SOCIEDAD CIVIL</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029980</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ISOLA BRUCE ABOGADOS SOCIEDAD CIVIL</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20303166573</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V ALARMAS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">21/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028354</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V ALARMAS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">110.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">110.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">28/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">05/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028192</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1050.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1050.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029546</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">04/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029553</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">11/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029609</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029640</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029662</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">675.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">675.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029676</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">600.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">600.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">29/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029690</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029773</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">200.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029806</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">13/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029814</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">14/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029838</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029839</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029840</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029891</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">12.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">12.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029977</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029995</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		APERT.LIBRO</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">70.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029996</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		APERT.LIBRO</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">140.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">140.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">03/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100901481</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030013</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">J & V RESGUARDO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">75.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20153159972</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LA CASA DEL ALFAJOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029520</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LA CASA DEL ALFAJOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20153159972</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LA CASA DEL ALFAJOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030019</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LA CASA DEL ALFAJOR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601355761</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029063</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601355761</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029185</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601355761</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029417</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LIDERMAN SERVICIOS S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20516726319</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LM MARKETING INMOBILIARIO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">13/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029354</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LM MARKETING INMOBILIARIO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20611626411</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		LUCKIA PERU RESTAURACION S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029963</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">LUCKIA PERU RESTAURACION S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">30/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20610176322</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028365</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">125.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">125.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">29/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20610176322</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/03/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028913</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/03/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20610176322</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029139</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MALON S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20418896915</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MAPFRE PERU COMPAﾃ選A DE SEGUROS Y REASEGUROS</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029979</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MAPFRE PERU COMPAﾑIA DE SEGUROS Y REASEGUROS</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">60.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">60.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20557064258</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MULTITASKING BUSINESS GROUP SOCIEDAD ANONIMA CERRADA - MULTITASKING BUSINESS GROUP S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/02/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0025116</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MULTITASKING BUSINESS GROUP SOCIEDAD ANONIMA CERRADA - MULTITASKING BUSINESS GROUP S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C7891</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/02/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MARTHA</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20131367776</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MUNICIPALIDAD DE BARRANCO</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">18/02/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028642</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MUNICIPALIDAD DE BARRANCO</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1500.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/02/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20614601770</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MURALLA 360 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">05/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029266</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MURALLA 360 S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">150.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20606486023</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MURALLA NORTE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">31/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030027</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MURALLA NORTE S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CARTA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">07/08/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601377633</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MUREL DOMUM INVERSIONES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/12/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028107</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MUREL DOMUM INVERSIONES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/12/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601377633</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		MUREL DOMUM INVERSIONES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029941</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">MUREL DOMUM INVERSIONES S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10078573878</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		ODE PEREYRA SOFIA INES</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">29/11/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0003848</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">ODE PEREYRA SOFIA INES</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25000.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25000.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06/12/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09180532</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PEREZ AGREDA PABLO AGUSTIN</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">25/04/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028408</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PEREZ AGREDA PABLO AGUSTIN</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K62284</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.10</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.10</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">02/05/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601641250</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PESCO PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/06/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029699</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PESCO PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">230.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">230.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">01/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERG1A PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004056</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERG1A PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66876</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">23/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0020835</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66178</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGiA PERu S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004045</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGiA PERu S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66675</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004046</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66677</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029322</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66677</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGiA PERu S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030548</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGiA PERu S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66675</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030549</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66677</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0020836</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66538</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">480.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">11/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029381</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66876</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">836.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/06/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">14/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029869</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67194</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">3950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">3950.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">21/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004116</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67160</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004117</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67161</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004118</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67159</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004119</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66808</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029905</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67160</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">836.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029906</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67161</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">836.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029907</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67159</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">836.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029921</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66808</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1950.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030967</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67160</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030968</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67161</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030969</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K67159</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20269985900</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030970</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ ENERGIA PERU S.A.A.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66808</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">100.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004042</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66670</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004043</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66674</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0004044</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66676</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">120.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029318</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66670</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1000.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">1000.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029319</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66674</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029320</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66676</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">950.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030545</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66670</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030546</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66674</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20604098565</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">09/05/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0030547</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PLUZ SOLUCIONES PERU S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K66676</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">50.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">16/05/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20609275945</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		PROMOTORA LA MURALLA DEL SUR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">15/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029885</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">PROMOTORA LA MURALLA DEL SUR S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">22/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20614011131</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		RESORT LOGO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">13/04/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029086</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">RESORT LOGO S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">49.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">49.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">10060630</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		SALAZAR JAMIS EDUARDO</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/02/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">B</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0059330</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SALAZAR JAMIS EDUARDO</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">25.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">26/03/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">06665662</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		SAN MIGUEL DEZA CARLOS ALBERTO</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20/01/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">I</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0001</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029882</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SAN MIGUEL DEZA CARLOS ALBERTO</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		C8140</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">24.20</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">24.20</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">27/01/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">VASCENCIO</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">73787183</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		SANTILLAN MUﾃ前Z JHON MICHEL</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/05/2025</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">B</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">BE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0061314</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SANTILLAN MUﾑOZ JHON MICHEL</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		K60977</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">490.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">490.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">19/05/2025</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20601266602</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		SM COMERCIAL SOCIEDAD ANONIMA CERRADA - SM COMERCIAL S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">28/03/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0028990</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SM COMERCIAL SOCIEDAD ANONIMA CERRADA - SM COMERCIAL S.A.C.</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">7847.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">942.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">12/04/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+		<tr>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">20100147514</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">
+		SOUTHERN PERU COPPER CORPORATION, SUCURSAL DEL PER?</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">17/07/2026</span></td>
+		<td align="center" style='mso-number-format:\@'><span class="titulos">F</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">FE01</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">0029915</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">SOUTHERN PERU COPPER CORPORATION, SUCURSAL DEL PER?</span></td>
+		<td align="left"   style='mso-number-format:\@;vertical-align:top;'><span class="titulos">
+		CERT.FIRMA</span>
+		</td>
+
+
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:0.00'><span class="titulos">250.00</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos">24/07/2026</span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+		<td align="left"   style='mso-number-format:\@'><span class="titulos"></span></td>
+	</tr>
+	
+	<tr>
+		<td colspan="13" align="center"><span class="titulos2"><b></b></span></td>
+	</tr>
+	<tr>
+		<td colspan="8" align="center" style='mso-number-format:0.00'><span class="titulos2"><b>TOTAL</b></span></td>
+		<td align="right"   style='mso-number-format:0.00'><span class="titulos2">133,931.89</span></td>
+		<td align="right"   style='mso-number-format:0.00'><span class="titulos2">115,290.65</span></td>
+	</tr>
+
+
+        </table>
+
+    </div>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

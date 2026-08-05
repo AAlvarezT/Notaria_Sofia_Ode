@@ -1,0 +1,24 @@
+ACTUALIZADOR DE CREDITOS Y CORREOS V2
+
+CAMBIOS PRINCIPALES
+- Si Outlook clasico no esta instalado, el programa muestra un mensaje inmediato y no queda cargando.
+- Nuevo boton "Vista previa HTML": permite revisar los correos sin Outlook.
+- El boton "Generar borradores Outlook" requiere Outlook clasico de escritorio, abierto y con una cuenta configurada.
+- Outlook web y el "nuevo Outlook" de Windows no exponen la interfaz COM usada por esta version.
+
+PRUEBA EN UNA PC SIN OUTLOOK
+1. Actualice los creditos.
+2. Complete correos en la hoja MAESTRO_CLIENTES.
+3. Guarde y cierre el Excel.
+4. Pulse "Vista previa HTML".
+5. Elija una carpeta. Se creara un HTML por cliente y RESUMEN_CORREOS.csv.
+
+USO EN LA NOTARIA
+1. Verifique que usen Outlook clasico de escritorio.
+2. Abra Outlook e inicie sesion antes de generar borradores.
+3. Pulse "Generar borradores Outlook".
+4. Revise la carpeta Borradores; nada se envia automaticamente.
+
+GENERAR EL EXE
+- Ejecute GENERAR_EXE_WINDOWS_V2.bat.
+- El resultado estara en dist\Actualizar_Creditos_y_Correos_V2.exe.

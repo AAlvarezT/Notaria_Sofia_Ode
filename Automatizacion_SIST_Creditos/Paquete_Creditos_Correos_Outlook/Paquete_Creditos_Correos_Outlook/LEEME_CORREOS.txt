@@ -1,0 +1,49 @@
+ACTUALIZADOR DE CRÉDITOS + BORRADORES EN OUTLOOK
+=================================================
+
+REQUISITOS DE USO
+- Windows.
+- Microsoft Excel para revisar el archivo generado.
+- Outlook de escritorio configurado con la cuenta desde la que se crearán los borradores.
+- El programa NO envía correos: solo los guarda en la carpeta Borradores de Outlook.
+
+GENERAR EL EXE
+1. Mantenga juntos estos archivos:
+   - actualizar_creditos_app_con_correos.pyw
+   - actualizar_creditos_vista_operativa_con_correos.py
+   - correos_outlook.py
+   - GENERAR_EXE_WINDOWS_CORREOS.bat
+2. Ejecute GENERAR_EXE_WINDOWS_CORREOS.bat.
+3. El EXE aparecerá en:
+   dist\Actualizar_Creditos_y_Correos.exe
+
+PRIMERA CONFIGURACIÓN
+1. Abra la aplicación y actualice los créditos como siempre.
+2. Abra el Excel generado.
+3. Entre a la hoja MAESTRO_CLIENTES.
+4. Complete, por cada cliente:
+   - NOMBRE CONTACTO: opcional.
+   - CORREO PRINCIPAL: obligatorio para crear borrador.
+   - CORREO CC: opcional. Puede separar varios correos con ;
+   - ENVIAR RECORDATORIOS: SI o NO.
+   - BLOQUEADO: SI evita crear borradores para ese cliente.
+5. Guarde y cierre el Excel.
+
+GENERAR BORRADORES
+1. Abra la aplicación.
+2. En “Archivo Créditos actuales” seleccione el Excel actualizado, o seleccione primero los dos archivos y ejecute la actualización.
+3. Pulse “Generar borradores Outlook”.
+4. Revise los mensajes de resultado.
+5. Abra Outlook y revise la carpeta Borradores antes de enviar.
+
+REGLAS INCLUIDAS
+- Un borrador por cliente, agrupando sus comprobantes.
+- Solo considera prioridades CRÍTICA, VENCIDA, ALTA y PREVENTIVA.
+- Excluye “VALIDAR PAGO/ANULACIÓN”.
+- No crea dos veces el mismo grupo de comprobantes durante el mismo día.
+- Registra lo creado en HISTORIAL_CORREOS.
+- Los clientes sin correo aparecen en el resumen del proceso.
+
+IMPORTANTE
+- Cierre el Excel antes de generar borradores; de lo contrario, Windows puede impedir que se guarde HISTORIAL_CORREOS.
+- Pruebe primero con uno o dos clientes y revise asunto, destinatarios, importes y texto.
