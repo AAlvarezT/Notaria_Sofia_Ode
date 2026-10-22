@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Cobranza{% endblock %}
+{% block content %}
+<h1>Cobranza</h1>
+<form method="post" action="/draft" class="draft-form">
+  <select name="document_key">
+    {% for doc in documents %}
+    <option value="{{ doc.document_key }}">{{ doc.cliente }} · {{ doc.serie }}-{{ doc.numero }}</option>
+    {% endfor %}
+  </select>
+  <input type="email" name="email" placeholder="correo@cliente.com" />
+  <input type="text" name="subject" value="Recordatorio de pago" />
+  <button type="submit">Crear borrador</button>
+</form>
+{% endblock %}

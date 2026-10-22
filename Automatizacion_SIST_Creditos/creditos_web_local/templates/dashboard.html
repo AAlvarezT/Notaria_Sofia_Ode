@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<section class="cards">
+  <div class="card accent">
+    <h3>Última actualización</h3>
+    <p>{{ summary.ultima_importacion.imported_at if summary.ultima_importacion else 'Sin importaciones' }}</p>
+  </div>
+  <div class="card">
+    <h3>Deuda pendiente</h3>
+    <p>S/ {{ '%.2f' % (summary.deuda_pendiente or 0) }}</p>
+  </div>
+  <div class="card warning">
+    <h3>Requieren revisión</h3>
+    <p>{{ summary.documentos_revision }}</p>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Importación reciente</h2>
+  <table>
+    <thead>
+      <tr><th>Archivo</th><th>Importado</th><th>Estado</th></tr>
+    </thead>
+    <tbody>
+      {% for item in imports %}
+      <tr>
+        <td>{{ item.file_name }}</td>
+        <td>{{ item.imported_at }}</td>
+        <td>{{ item.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Documentos prioritarios</h2>
+  <table>
+    <thead>
+      <tr><th>Cliente</th><th>Documento</th><th>Saldo</th><th>Vencimiento</th></tr>
+    </thead>
+    <tbody>
+      {% for doc in documents %}
+      <tr>
+        <td><a href="/cliente/{{ doc.document_key }}">{{ doc.cliente }}</a></td>
+        <td>{{ doc.serie }}-{{ doc.numero }}</td>
+        <td>S/ {{ '%.2f' % (doc.saldo_observado or 0) }}</td>
+        <td>{{ doc.fecha_vencimiento or 'Sin fecha' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

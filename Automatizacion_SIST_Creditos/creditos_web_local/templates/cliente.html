@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Cliente{% endblock %}
+{% block content %}
+<h1>{{ document.cliente }}</h1>
+<div class="panel">
+  <p><strong>Documento:</strong> {{ document.tipo }} {{ document.serie }}-{{ document.numero }}</p>
+  <p><strong>Saldo observado:</strong> S/ {{ '%.2f' % (document.saldo_observado or 0) }}</p>
+  <p><strong>Vencimiento:</strong> {{ document.fecha_vencimiento or 'Sin fecha' }}</p>
+  <p><strong>Estado:</strong> {{ document.estado }}</p>
+</div>
+{% endblock %}
