@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Cobranza{% endblock %}
+{% block content %}
+<h1>Cobranza</h1>
+<p>Solo se listan comprobantes cobrables (PENDIENTE y SALDO_PARCIAL) con saldo mayor a cero y sin inconsistencias pendientes.</p>
+<form method="post" action="/draft" class="draft-form">
+  <select name="document_key">
+    {% for doc in documents %}
+    <option value="{{ doc.document_key }}">
+      {{ doc.cliente }} · {{ doc.serie }}-{{ doc.numero }} · {{ doc.estado }} · S/ {{ '%.2f' % ((doc.saldo_observado or 0)|float) }}
+    </option>
+    {% endfor %}
+  </select>
+  <input type="email" name="email" placeholder="correo@cliente.com" />
+  <input type="text" name="subject" value="Recordatorio de pago" />
+  <button type="submit">Crear borrador</button>
+</form>
+
+<div id="draft-result" class="panel" style="display:none;"></div>
+
+<section class="panel">
+  <h2>Comprobantes en cobranza</h2>
+  <table>
+    <thead>
+      <tr><th>Cliente</th><th>Documento</th><th>Estado</th><th>Saldo</th><th>Vencimiento</th></tr>
+    </thead>
+    <tbody>
+      {% for doc in documents %}
+      <tr>
+        <td><a href="/cliente/{{ doc.document_key }}">{{ doc.cliente }}</a></td>
+        <td>{{ doc.serie }}-{{ doc.numero }}</td>
+        <td>{{ doc.estado }}</td>
+        <td>S/ {{ '%.2f' % ((doc.saldo_observado or 0)|float) }}</td>
+        <td>{{ doc.fecha_vencimiento or 'Sin fecha' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

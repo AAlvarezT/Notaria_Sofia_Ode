@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Cartera{% endblock %}
+{% block content %}
+<h1>Cartera</h1>
+<p>Use estado <code>PENDIENTE</code> o <code>SALDO_PARCIAL</code> para ver cartera cobrable.</p>
+<form class="filters" method="get" action="/cartera">
+  <input type="text" name="cliente" value="{{ filters.cliente or '' }}" placeholder="Cliente" />
+  <input type="text" name="documento" value="{{ filters.documento or '' }}" placeholder="Documento" />
+  <input type="text" name="responsable" value="{{ filters.responsable or '' }}" placeholder="Responsable" />
+  <input type="text" name="estado" value="{{ filters.estado or '' }}" placeholder="Estado" />
+  <button type="submit">Filtrar</button>
+</form>
+<table>
+  <thead>
+    <tr><th>Cliente</th><th>Documento</th><th>Saldo</th><th>Vencimiento</th><th>Estado</th></tr>
+  </thead>
+  <tbody>
+    {% for doc in documents %}
+    <tr>
+      <td><a href="/cliente/{{ doc.document_key }}">{{ doc.cliente }}</a></td>
+      <td>{{ doc.serie }}-{{ doc.numero }}</td>
+      <td>S/ {{ '%.2f' % ((doc.saldo_observado or 0)|float) }}</td>
+      <td>{{ doc.fecha_vencimiento or 'Sin fecha' }}</td>
+      <td>{{ doc.estado }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Revisión{% endblock %}
+{% block content %}
+<h1>Revisión</h1>
+<table>
+  <thead>
+    <tr><th>Documento</th><th>Estado</th><th>Observación</th></tr>
+  </thead>
+  <tbody>
+    {% for item in items %}
+    <tr>
+      <td>{{ item.document_key }}</td>
+      <td>{{ item.estado }}</td>
+      <td>{{ item.observaciones or 'Sin comentarios' }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
