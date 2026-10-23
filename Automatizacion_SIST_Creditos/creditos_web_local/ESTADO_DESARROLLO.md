@@ -44,26 +44,31 @@
 ### 5. Integración Outlook ✅ (lógica; COM no probado en CI)
 - `OutlookDraftService(enabled=False)` devuelve `success=False` con mensaje claro ("desactivada"). **No reporta éxito falso.**
 - `MockOutlookDraftService` solo se usa en pruebas; no aparece en código de producción.
-- `/draft` requiere email válido (con `@`); el nombre del cliente nunca se usa como destinatario.
+- `/draft` requiere email válido con regex (más estricto que validar solo `@`); el nombre del cliente nunca se usa como destinatario.
 - Deduplicación persistente: usa la tabla `draft_history` (SQLite), sobrevive reinicios.
+- Deduplicación concurrente: reserva de slot `PROCESSING` en DB antes de crear el borrador para evitar duplicados simultáneos.
 - Deduplicación en sesión: `_created_keys` evita doble clic.
 - `OutlookDraftService.release()` libera referencias COM.
 - No hay envío automático de correos; solo creación de borradores.
 - Se registra en `draft_history` solo cuando el borrador real se crea con éxito.
-- Gestión de contactos: endpoints `GET /contacts/{doc_key}` y `POST /contacts`.
+- Si no encuentra la cuenta de Outlook configurada, devuelve error claro.
+- Gestión de contactos: endpoints `GET /contacts/{doc_key}` y `POST /contacts` + formulario web en `/cliente/{document_key}` para alta/edición.
 
 ### 6. Scheduler mínimo ✅
-- Hilo daemon único; usa `threading.Lock` para evitar múltiples instancias.
+- Hilo daemon único por proceso.
+- Protección entre procesos con lock file (`scheduler.lock` + `msvcrt.locking`): si otro proceso ya está revisando, este proceso no inicia scheduler y lo informa.
 - Lee `signo_folder`, `check_frequency_minutes` y `days_advance` de la configuración.
 - Importa archivos Excel nuevos/modificados en la carpeta configurada.
+- Ignora archivos temporales de Excel (`~$*.xlsx`).
 - Cuenta documentos que requieren recordatorio según `days_advance`.
 - Estado disponible en `/health` y vía `get_scheduler_status()`.
 - No inicia si `signo_folder` está vacío o no existe.
 - Reimportación evitada con huella de archivo (path + mtime).
+- Un archivo defectuoso no detiene la revisión del resto; se acumulan errores recientes.
 
 ---
 
-## Pruebas automatizadas (25 tests, 25 ✅)
+## Pruebas automatizadas (28 tests, 28 ✅)
 
 | Test | Cobertura |
 |------|-----------|
@@ -92,40 +97,45 @@
 | `test_persistent_draft_deduplication` | Dedup persistente via draft_history |
 | `test_frequency_anticipation_and_deduplication_work_for_outlook_mocks` | Mock release + dedup |
 | `test_outlook_failure_is_not_accepted_as_real_success` | Entorno automatizado bloquea COM real |
+| `test_email_validation_is_stricter_than_at_only` | Validación estricta de email |
+| `test_reserve_draft_slot_prevents_duplicates_and_allows_retry_after_failure` | Dedupe concurrente y reintento |
+| `test_scheduler_ignores_excel_temp_files_and_continues_after_faulty` | Scheduler ignora `~$` y sigue con errores |
 
 ---
 
 ## Archivo real (20261021133448BWv9Yl1k.xlsx)
 
-**No estuvo disponible** en el workspace durante esta sesión. Los resultados esperados
-(978 ventas, 28 pendientes, 12 cancelados, etc.) **no pudieron ser verificados aquí**.
-Los fixtures de prueba replican la estructura del archivo real y los casos de borde descritos.
+Validado en esta sesión sobre base temporal vacía (sin modificar el archivo):
+
+- Filas leídas: **1,018**
+- Comprobantes únicos: **978**
+- Ventas: **978**
+- Pendientes: **28**
+- Cancelados: **12**
+- Sin saldo cobrable: **950**
+- `PENDIENTE`: **27** por **S/ 26,860**
+- `SALDO_PARCIAL`: **1** por **S/ 1,320**
+- Total cobrable: **S/ 28,180** en **28** comprobantes
+- `F|FE01|0030712`: estado `SALDO_PARCIAL`, saldo **1320**, `revision_required = 0`
+- Reimportación: no duplica documentos (sigue en **978**)
+- Tiempo de importación medido: ~**0.50 s** (segunda importación ~**0.49 s**)
 
 ---
 
 ## Pendientes para validación en la computadora de la usuaria
 
-### Prioridad 1 — Verificar con el archivo real
-1. Importar `20261021133448BWv9Yl1k.xlsx` y confirmar:
-   - 978 comprobantes únicos, 28 pendientes, 12 cancelados, 1018 filas leídas.
-   - Cartera cobrable: S/ 28,180 en 28 comprobantes (27 PENDIENTE + 1 SALDO_PARCIAL).
-   - `F|FE01|0030712` → `SALDO_PARCIAL`, saldo S/ 1,320, visible en `/cobranza`.
+### Prioridad 1 — Verificar en Windows con Outlook instalado
+1. Activar la integración en Configuración con una cuenta de Outlook real.
+2. Crear un borrador desde `/cobranza` y confirmar que aparece en Borradores de Outlook.
+3. Verificar error claro cuando la cuenta configurada no exista.
+4. Verificar deduplicación persistente tras reinicio de aplicación.
 
-### Prioridad 2 — Verificar en Windows con Outlook instalado
-2. Activar la integración en Configuración → cuenta de Outlook configurada.
-3. Crear un borrador real desde `/cobranza` → confirmar que aparece en Borradores de Outlook.
-4. Verificar que reimportar o recargar la página no crea borrador duplicado.
-5. Verificar que `release()` libera la conexión COM al terminar.
+### Prioridad 2 — Scheduler con carpeta real de SIGNO
+5. Configurar `signo_folder` real y comprobar importación automática periódica.
+6. Validar que los archivos `~$*.xlsx` se ignoran.
+7. Confirmar que un archivo defectuoso no detiene la revisión del resto.
+8. Verificar en `/configuracion` y `/health`: última revisión, última importación, errores y recordatorios.
 
-### Prioridad 3 — Scheduler con carpeta real
-6. Configurar `signo_folder` apuntando a la carpeta donde llegan los archivos de SIGNO.
-7. Dejar correr el servidor y confirmar que la carpeta se revisa y los archivos se importan automáticamente.
-8. Verificar que el conteo de recordatorios pendientes en `/health` es correcto.
-
-### Prioridad 4 — Interfaz de contactos
-9. Registrar contactos desde la UI (endpoint `/contacts`).
-10. Confirmar que al crear un borrador, el correo del contacto se completa automáticamente.
-
-### Prioridad 5 — Templates
-11. Revisar que las vistas HTML (`cobranza.html`, `dashboard.html`) muestran correctamente
-    documentos SALDO_PARCIAL en la lista cobrable y los totales del dashboard.
+### Prioridad 3 — Flujo de contactos y cobranza en UI
+9. Registrar y editar contactos en `/cliente/{document_key}` y confirmar persistencia.
+10. Confirmar que la lista de `/cobranza` incluye `SALDO_PARCIAL` cobrable y excluye revisión/saldo cero.s totales del dashboard.

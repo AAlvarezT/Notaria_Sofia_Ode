@@ -4,8 +4,53 @@
 <h1>{{ document.cliente }}</h1>
 <div class="panel">
   <p><strong>Documento:</strong> {{ document.tipo }} {{ document.serie }}-{{ document.numero }}</p>
-  <p><strong>Saldo observado:</strong> S/ {{ '%.2f' % (document.saldo_observado or 0) }}</p>
+  <p><strong>Clave:</strong> {{ document.document_key }}</p>
+  <p><strong>Saldo observado:</strong> S/ {{ '%.2f' % ((document.saldo_observado or 0)|float) }}</p>
   <p><strong>Vencimiento:</strong> {{ document.fecha_vencimiento or 'Sin fecha' }}</p>
   <p><strong>Estado:</strong> {{ document.estado }}</p>
 </div>
+
+<section class="panel">
+  <h2>Contactos del cliente</h2>
+  <table>
+    <thead>
+      <tr><th>Principal</th><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Rol</th><th>Editar</th></tr>
+    </thead>
+    <tbody>
+      {% for c in contacts %}
+      <tr>
+        <td>{{ 'Sí' if c.es_principal else 'No' }}</td>
+        <td>{{ c.nombre }}</td>
+        <td>{{ c.correo }}</td>
+        <td>{{ c.telefono }}</td>
+        <td>{{ c.rol }}</td>
+        <td>
+          <form method="post" action="/cliente/{{ document.document_key }}/contactos" class="inline-form">
+            <input type="hidden" name="contact_id" value="{{ c.id }}" />
+            <input type="text" name="nombre" value="{{ c.nombre or '' }}" required />
+            <input type="email" name="correo" value="{{ c.correo or '' }}" required />
+            <input type="text" name="telefono" value="{{ c.telefono or '' }}" />
+            <input type="text" name="rol" value="{{ c.rol or '' }}" />
+            <label><input type="checkbox" name="es_principal" {% if c.es_principal %}checked{% endif %}/> Principal</label>
+            <button type="submit">Actualizar</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Registrar / editar contacto</h2>
+  <form method="post" action="/cliente/{{ document.document_key }}/contactos" class="config-form">
+    <input type="hidden" name="contact_id" value="" />
+    <label>Nombre<input type="text" name="nombre" required /></label>
+    <label>Correo<input type="email" name="correo" required /></label>
+    <label>Teléfono<input type="text" name="telefono" /></label>
+    <label>Rol<input type="text" name="rol" placeholder="Pagos, Contabilidad, Gerencia..." /></label>
+    <label><input type="checkbox" name="es_principal" /> Marcar como principal</label>
+    <button type="submit">Guardar contacto</button>
+  </form>
+</section>
 {% endblock %}

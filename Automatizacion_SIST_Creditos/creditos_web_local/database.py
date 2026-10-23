@@ -13,6 +13,15 @@ CONFIG_PATH = APP_DATA_DIR / "config.json"
 BACKUP_DIR = APP_DATA_DIR / "backups"
 
 
+class ManagedConnection(sqlite3.Connection):
+    """SQLite connection that always closes when used in a `with` block."""
+
+    def __exit__(self, exc_type, exc_value, traceback) -> bool:
+        handled = super().__exit__(exc_type, exc_value, traceback)
+        self.close()
+        return handled
+
+
 def ensure_base_dirs() -> None:
     APP_DATA_DIR.mkdir(parents=True, exist_ok=True)
     BACKUP_DIR.mkdir(parents=True, exist_ok=True)
@@ -29,7 +38,7 @@ def connect(db_path: Optional[str | Path] = None) -> sqlite3.Connection:
     else:
         db_path = Path(db_path)
         db_path.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(str(db_path))
+    conn = sqlite3.connect(str(db_path), factory=ManagedConnection)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys=ON")
     return conn
@@ -253,6 +262,92 @@ def save_draft_history(
         )
 
 
+def reserve_draft_slot(
+    document_key: str,
+    cliente: str,
+    destinatario: str,
+    subject: str,
+    html_preview: str,
+    db_path: Optional[Path] = None,
+) -> tuple[bool, str]:
+    """Reserve a unique slot for draft creation to avoid duplicate concurrent requests."""
+    now = __import__("datetime").datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    with connect(db_path) as conn:
+        cursor = conn.execute(
+            """INSERT OR IGNORE INTO draft_history
+               (document_key, cliente, destinatario, subject, outlook_message_id, draft_status, created_at, html_preview)
+               VALUES (?, ?, ?, ?, '', 'PROCESSING', ?, ?)""",
+            (document_key, cliente, destinatario, subject, now, html_preview),
+        )
+        if cursor.rowcount == 1:
+            return True, "RESERVED"
+
+        row = conn.execute(
+            "SELECT draft_status FROM draft_history WHERE document_key = ? AND subject = ?",
+            (document_key, subject),
+        ).fetchone()
+        if row is None:
+            return False, "UNKNOWN"
+        status = (row["draft_status"] or "").upper()
+        if status == "FAILED":
+            cursor = conn.execute(
+                """UPDATE draft_history
+                   SET draft_status = 'PROCESSING',
+                       destinatario = ?,
+                       cliente = ?,
+                       html_preview = ?,
+                       created_at = ?
+                   WHERE document_key = ? AND subject = ? AND draft_status = 'FAILED'""",
+                (destinatario, cliente, html_preview, now, document_key, subject),
+            )
+            if cursor.rowcount == 1:
+                return True, "RESERVED"
+        if status == "PROCESSING":
+            return False, "PROCESSING"
+        if status == "CREATED":
+            return False, "CREATED"
+        return False, status or "UNKNOWN"
+
+
+def mark_draft_created(
+    document_key: str,
+    subject: str,
+    outlook_message_id: str,
+    html_preview: str,
+    db_path: Optional[Path] = None,
+) -> None:
+    now = __import__("datetime").datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    with connect(db_path) as conn:
+        conn.execute(
+            """UPDATE draft_history
+               SET outlook_message_id = ?,
+                   draft_status = 'CREATED',
+                   html_preview = ?,
+                   created_at = ?
+               WHERE document_key = ? AND subject = ?""",
+            (outlook_message_id, html_preview, now, document_key, subject),
+        )
+
+
+def mark_draft_failed(
+    document_key: str,
+    subject: str,
+    error_message: str,
+    db_path: Optional[Path] = None,
+) -> None:
+    now = __import__("datetime").datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    with connect(db_path) as conn:
+        conn.execute(
+            """UPDATE draft_history
+               SET draft_status = 'FAILED',
+                   outlook_message_id = '',
+                   html_preview = ?,
+                   created_at = ?
+               WHERE document_key = ? AND subject = ?""",
+            (error_message, now, document_key, subject),
+        )
+
+
 def draft_already_exists(
     document_key: str,
     subject: str,
@@ -277,7 +372,7 @@ def get_document(document_key: str) -> Optional[sqlite3.Row]:
         return conn.execute("SELECT * FROM documents WHERE document_key = ?", (document_key,)).fetchone()
 
 
-def get_dashboard_summary() -> Dict[str, Any]:
+def get_dashboard_summary(days_advance: int = 7) -> Dict[str, Any]:
     with connect() as conn:
         stats = {
             "deuda_pendiente": conn.execute(
@@ -294,7 +389,10 @@ def get_dashboard_summary() -> Dict[str, Any]:
             "documentos_urgentes": conn.execute(
                 "SELECT COUNT(*) FROM documents WHERE estado IN ('PENDIENTE', 'SALDO_PARCIAL')"
                 " AND CAST(saldo_observado AS REAL) > 0"
-                " AND fecha_vencimiento IS NOT NULL AND fecha_vencimiento <= date('now','+7 days')"
+                " AND fecha_vencimiento IS NOT NULL"
+                " AND fecha_vencimiento <= date('now', ?)"
+                ,
+                (f"+{int(days_advance)} days",),
             ).fetchone()[0],
             "ultima_importacion": conn.execute(
                 "SELECT imported_at FROM imports ORDER BY imported_at DESC LIMIT 1"

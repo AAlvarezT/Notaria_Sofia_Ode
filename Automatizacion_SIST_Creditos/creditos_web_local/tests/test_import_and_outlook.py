@@ -1,13 +1,25 @@
 ﻿from __future__ import annotations
 
 import sqlite3
+import tempfile
 from pathlib import Path
 
 import pytest
 from openpyxl import Workbook
 
-from database import connect, draft_already_exists, init_db, list_documents, save_draft_history
+from app import is_valid_email
+from database import (
+    connect,
+    draft_already_exists,
+    init_db,
+    list_documents,
+    mark_draft_created,
+    mark_draft_failed,
+    reserve_draft_slot,
+    save_draft_history,
+)
 from outlook import MockOutlookDraftService, OutlookDraftService
+from scheduler import _check_folder
 from services import determine_document_state, import_signo_file
 
 
@@ -532,3 +544,60 @@ def test_absent_date_0000_treated_as_null(temp_db, tmp_path):
     assert row["fecha_emision"] is None
     assert row["fecha_vencimiento"] is None
 
+
+def test_email_validation_is_stricter_than_at_only():
+    assert is_valid_email("pagos@empresa.com")
+    assert not is_valid_email("sin-arroba")
+    assert not is_valid_email("nombre@localhost")
+    assert not is_valid_email("invalido@@empresa.com")
+    assert not is_valid_email("nombre @empresa.com")
+
+
+def test_reserve_draft_slot_prevents_duplicates_and_allows_retry_after_failure(temp_db):
+    reserved, status = reserve_draft_slot("F|A|1", "Cliente A", "a@demo.com", "Recordatorio", "<p>x</p>", db_path=temp_db)
+    assert reserved is True
+    assert status == "RESERVED"
+
+    reserved2, status2 = reserve_draft_slot("F|A|1", "Cliente A", "a@demo.com", "Recordatorio", "<p>x</p>", db_path=temp_db)
+    assert reserved2 is False
+    assert status2 == "PROCESSING"
+
+    mark_draft_failed("F|A|1", "Recordatorio", "falló", db_path=temp_db)
+    reserved3, status3 = reserve_draft_slot("F|A|1", "Cliente A", "a@demo.com", "Recordatorio", "<p>x</p>", db_path=temp_db)
+    assert reserved3 is True
+    assert status3 == "RESERVED"
+
+    mark_draft_created("F|A|1", "Recordatorio", "MSG-1", "<p>ok</p>", db_path=temp_db)
+    assert draft_already_exists("F|A|1", "Recordatorio", db_path=temp_db)
+
+
+def test_scheduler_ignores_excel_temp_files_and_continues_after_faulty(monkeypatch, tmp_path):
+    # Arrange
+    folder = tmp_path / "inbox"
+    folder.mkdir()
+    ok_file = folder / "ok.xlsx"
+    bad_file = folder / "bad.xlsx"
+    temp_excel = folder / "~$lock.xlsx"
+    ok_file.write_bytes(b"ok")
+    bad_file.write_bytes(b"bad")
+    temp_excel.write_bytes(b"temp")
+
+    import services
+    calls = []
+
+    def fake_import(path, db_path=None):
+        calls.append(Path(path).name)
+        if Path(path).name == "bad.xlsx":
+            raise ValueError("bad file")
+        return {"status": "OK"}
+
+    monkeypatch.setattr(services, "import_signo_file", fake_import)
+    cfg = {"signo_folder": str(folder), "days_advance": 7}
+
+    # Act
+    _check_folder(cfg)
+
+    # Assert
+    assert "~$lock.xlsx" not in calls
+    assert "ok.xlsx" in calls
+    assert "bad.xlsx" in calls

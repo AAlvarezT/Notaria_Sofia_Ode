@@ -302,6 +302,15 @@ def _document_sort_key(record: Dict[str, Any]) -> tuple:
     return (priority, fecha, saldo)
 
 
+def _safe_decimal(value: Any) -> Optional[Decimal]:
+    if value in (None, ""):
+        return None
+    try:
+        return Decimal(str(value))
+    except (InvalidOperation, ValueError, TypeError):
+        return None
+
+
 def _merge_document_rows(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Merge rows from multiple sheets into one canonical record.
 
@@ -345,6 +354,34 @@ def _merge_document_rows(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
         imp = best_pendiente.get("importe_facturado")
         if imp not in (None, ""):
             merged["importe_facturado"] = imp
+        # If later rows from other sheets contradict Pendientes and no safe resolution
+        # is possible, mark the document for manual review.
+        pend_ts = best_pendiente.get("fecha_actualizacion") or "0000-00-00"
+        pend_saldo = _safe_decimal(best_pendiente.get("saldo_pendiente"))
+        contradictory_later = False
+        for other in rows:
+            other_sheet = (other.get("source_sheet") or "").upper()
+            if "PENDIENTES" in other_sheet:
+                continue
+            other_ts = other.get("fecha_actualizacion") or "0000-00-00"
+            if str(other_ts) <= str(pend_ts):
+                continue
+            other_saldo = _safe_decimal(other.get("saldo_pendiente"))
+            if pend_saldo is not None and other_saldo is not None and other_saldo != pend_saldo:
+                contradictory_later = True
+                break
+
+        # Multiple pendientes with same latest timestamp but different balances are
+        # also contradictory.
+        latest_pend_ts = max((r.get("fecha_actualizacion") or "0000-00-00" for r in pendientes_rows), default="0000-00-00")
+        latest_pend_saldos = {
+            _safe_decimal(r.get("saldo_pendiente"))
+            for r in pendientes_rows
+            if (r.get("fecha_actualizacion") or "0000-00-00") == latest_pend_ts
+        }
+        latest_pend_saldos.discard(None)
+        if contradictory_later or len(latest_pend_saldos) > 1:
+            merged["_has_conflict"] = True
     else:
         # No PENDIENTES: use max reported importe and saldo from available sheets
         best_imp: Optional[str] = None
@@ -535,6 +572,8 @@ def determine_document_state(doc_key: str, row: Dict[str, Any]) -> str:
     """
     if row.get("_has_invalid_amount"):
         return "EN_REVISION"
+    if row.get("_has_conflict"):
+        return "EN_REVISION"
 
     saldo_raw = row.get("saldo_pendiente")
     if saldo_raw is None:
@@ -586,4 +625,3 @@ def create_review_item(document_key: str, kind: str, detail: str) -> None:
             " VALUES (?, ?, ?, datetime('now'))",
             (document_key, kind, detail),
         )
-

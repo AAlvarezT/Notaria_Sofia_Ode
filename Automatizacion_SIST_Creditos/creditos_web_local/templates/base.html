@@ -18,6 +18,12 @@
     </nav>
   </header>
   <main class="container">
+    {% if message %}
+    <div class="flash flash-success">{{ message }}</div>
+    {% endif %}
+    {% if error %}
+    <div class="flash flash-error">{{ error }}</div>
+    {% endif %}
     {% block content %}{% endblock %}
   </main>
   <script src="/static/app.js"></script>

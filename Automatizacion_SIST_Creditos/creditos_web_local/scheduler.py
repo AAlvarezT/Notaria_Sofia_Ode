@@ -12,16 +12,23 @@ Design constraints:
 """
 from __future__ import annotations
 
+import os
 import threading
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
+
+import msvcrt
+
+from database import APP_DATA_DIR
 
 _lock = threading.Lock()
 _import_lock = threading.Lock()
 _thread: Optional[threading.Thread] = None
 _running = False
+_lock_handle = None
+_lock_file = APP_DATA_DIR / "scheduler.lock"
 
 _status: Dict[str, Any] = {
     "running": False,
@@ -29,6 +36,7 @@ _status: Dict[str, Any] = {
     "last_import": None,
     "errors": [],
     "pending_reminders": 0,
+    "owner_pid": None,
 }
 
 # Set of (path, mtime) already imported this session – persistent protection
@@ -39,6 +47,44 @@ _seen_files: set = set()
 def get_scheduler_status() -> Dict[str, Any]:
     with _lock:
         return dict(_status)
+
+
+def _append_error(message: str) -> None:
+    with _lock:
+        errors = list(_status.get("errors", []))
+        errors.append(message)
+        _status["errors"] = errors[-10:]
+
+
+def _acquire_process_lock() -> bool:
+    global _lock_handle
+    APP_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    handle = open(_lock_file, "a+b")
+    try:
+        handle.seek(0)
+        msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+    except OSError:
+        handle.close()
+        return False
+    _lock_handle = handle
+    return True
+
+
+def _release_process_lock() -> None:
+    global _lock_handle
+    handle = _lock_handle
+    if handle is None:
+        return
+    try:
+        handle.seek(0)
+        msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+    except OSError:
+        pass
+    try:
+        handle.close()
+    except OSError:
+        pass
+    _lock_handle = None
 
 
 def _check_folder(cfg: Dict[str, Any]) -> None:
@@ -58,11 +104,10 @@ def _check_folder(cfg: Dict[str, Any]) -> None:
             _status["errors"] = [f"Carpeta no encontrada: {folder_path}"]
         return
 
-    with _lock:
-        _status["errors"] = []
-
     # --- Import new/modified Excel files ---
     for xlsx in sorted(folder.glob("*.xlsx")):
+        if xlsx.name.startswith("~$"):
+            continue
         try:
             mtime = xlsx.stat().st_mtime
         except OSError:
@@ -80,8 +125,7 @@ def _check_folder(cfg: Dict[str, Any]) -> None:
                 with _lock:
                     _status["last_import"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
             except Exception as exc:
-                with _lock:
-                    _status["errors"].append(f"Error importando {xlsx.name}: {exc}")
+                _append_error(f"Error importando {xlsx.name}: {exc}")
 
     # --- Count pending reminders ---
     cutoff = (datetime.now() + timedelta(days=days_advance)).date().isoformat()
@@ -98,8 +142,7 @@ def _check_folder(cfg: Dict[str, Any]) -> None:
         with _lock:
             _status["pending_reminders"] = count
     except Exception as exc:
-        with _lock:
-            _status["errors"].append(f"Error contando recordatorios: {exc}")
+        _append_error(f"Error contando recordatorios: {exc}")
 
 
 def _scheduler_loop(cfg: Dict[str, Any]) -> None:
@@ -109,8 +152,7 @@ def _scheduler_loop(cfg: Dict[str, Any]) -> None:
         try:
             _check_folder(cfg)
         except Exception as exc:
-            with _lock:
-                _status["errors"].append(f"Error en ciclo de revisión: {exc}")
+            _append_error(f"Error en ciclo de revisión: {exc}")
         with _lock:
             _status["last_check"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
         # Sleep in 5-second segments so we can exit promptly
@@ -129,10 +171,20 @@ def start_scheduler(cfg: Dict[str, Any]) -> None:
     # Stop any existing scheduler first
     stop_scheduler()
 
+    if not _acquire_process_lock():
+        with _lock:
+            _status["running"] = False
+            _status["owner_pid"] = None
+            _status["errors"] = [
+                "No se inició el scheduler: otro proceso ya está ejecutando la revisión periódica.",
+            ]
+        return
+
     _running = True
     with _lock:
         _status["running"] = True
         _status["errors"] = []
+        _status["owner_pid"] = os.getpid()
 
     t = threading.Thread(target=_scheduler_loop, args=(cfg,), daemon=True, name="signo-scheduler")
     t.start()
@@ -145,5 +197,7 @@ def stop_scheduler() -> None:
     if _thread is not None:
         _thread.join(timeout=15)
         _thread = None
+    _release_process_lock()
     with _lock:
         _status["running"] = False
+        _status["owner_pid"] = None

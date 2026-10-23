@@ -12,4 +12,21 @@
   <label><input type="checkbox" name="outlook_enabled" {% if config.get('outlook_enabled') %}checked{% endif %}/> Habilitar integración Outlook</label>
   <button type="submit">Guardar</button>
 </form>
+
+<section class="panel">
+  <h2>Estado de revisión automática</h2>
+  <p><strong>En ejecución:</strong> {{ 'Sí' if scheduler.running else 'No' }}</p>
+  <p><strong>Última revisión:</strong> {{ scheduler.last_check or 'Sin ejecuciones' }}</p>
+  <p><strong>Última importación:</strong> {{ scheduler.last_import or 'Sin importaciones' }}</p>
+  <p><strong>Recordatorios detectados:</strong> {{ scheduler.pending_reminders or 0 }}</p>
+  <p><strong>Proceso dueño:</strong> {{ scheduler.owner_pid or 'N/D' }}</p>
+  {% if scheduler.errors %}
+  <h3>Errores recientes</h3>
+  <ul>
+    {% for item in scheduler.errors %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
 {% endblock %}

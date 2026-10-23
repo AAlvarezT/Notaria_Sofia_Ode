@@ -85,13 +85,20 @@ class OutlookDraftService:
             mail.To = recipient
             mail.HTMLBody = body_html
             if account:
+                account_found = False
                 try:
                     for acc in self._com.Session.Accounts:
                         if acc.SmtpAddress.lower() == account.lower():
                             mail.SendUsingAccount = acc
+                            account_found = True
                             break
                 except Exception:
-                    pass  # Use default account if selection fails
+                    account_found = False
+                if not account_found:
+                    return DraftResult(
+                        success=False,
+                        error=f"No se encontró la cuenta de Outlook configurada: {account}",
+                    )
             mail.Save()
             message_id = getattr(mail, "EntryID", None) or f"DRAFT_{identity}"
             self._created_keys.add(identity)

@@ -25,6 +25,10 @@ table { width: 100%; border-collapse: collapse; margin-top: 20px; }
 thead { background: #eaf2ff; }
 th, td { padding: 10px 12px; border-bottom: 1px solid #e6edf3; text-align: left; }
 .filters, .config-form, .draft-form { display: grid; gap: 12px; max-width: 720px; }
+.inline-form { display: grid; gap: 6px; }
 input, select, button { padding: 10px 12px; border: 1px solid #ced7e2; border-radius: 8px; }
 button { background: #1d7cb8; color: white; font-weight: 600; cursor: pointer; }
 input[type="checkbox"] { width: 18px; height: 18px; }
+.flash { margin-bottom: 16px; border: 1px solid transparent; border-radius: 10px; padding: 12px 14px; }
+.flash-success { background: #e9f8ef; border-color: #6ac48f; color: #1f5f39; }
+.flash-error { background: #fff1f1; border-color: #e08a8a; color: #8c1f1f; }
