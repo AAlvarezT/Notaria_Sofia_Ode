@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import tempfile
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -9,9 +10,13 @@ from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from database import backup_database, get_db_path, get_dashboard_summary, get_document, get_recent_imports, get_setting, init_db, list_documents, load_config, save_config
+from database import (
+    backup_database, draft_already_exists, get_dashboard_summary, get_db_path,
+    get_document, get_recent_imports, get_setting, init_db, list_documents,
+    load_config, save_config, save_draft_history,
+)
 from services import import_signo_file, list_reviews
-from outlook import MockOutlookDraftService, OutlookDraftService
+from outlook import OutlookDraftService
 
 
 app = FastAPI(title="Créditos Web Local", version="0.1.0")
@@ -40,6 +45,8 @@ def startup_event() -> None:
     defaults = config_defaults()
     merged = {**defaults, **current}
     save_config(merged)
+    from scheduler import start_scheduler
+    start_scheduler(merged)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -71,8 +78,10 @@ async def client_detail(request: Request, document_key: str) -> HTMLResponse:
 
 @app.get("/cobranza", response_class=HTMLResponse)
 async def cobranza(request: Request) -> HTMLResponse:
-    documents = list_documents({"estado": "PENDIENTE"})
-    return templates.TemplateResponse("cobranza.html", {"request": request, "documents": documents})
+    documents = list_documents({"estado": ["PENDIENTE", "SALDO_PARCIAL"]})
+    # Exclude zero-saldo and documents with unresolved inconsistencies from reminder selection
+    cobrables = [d for d in documents if float(d["saldo_observado"] or 0) > 0 and not d["revision_required"]]
+    return templates.TemplateResponse("cobranza.html", {"request": request, "documents": cobrables})
 
 
 @app.get("/revision", response_class=HTMLResponse)
@@ -110,6 +119,8 @@ async def save_configuration(
         }
     )
     save_config(config)
+    from scheduler import start_scheduler
+    start_scheduler(config)
     return RedirectResponse(url="/configuracion", status_code=303)
 
 
@@ -117,10 +128,18 @@ async def save_configuration(
 async def importar(request: Request, file: UploadFile = None) -> JSONResponse:
     if not file:
         raise HTTPException(status_code=400, detail="No se recibió ningún archivo.")
-    import_path = Path("/tmp") / file.filename
-    with import_path.open("wb") as handle:
-        handle.write(await file.read())
-    result = import_signo_file(import_path)
+    # Use a platform-safe temp file instead of /tmp (which fails on Windows)
+    suffix = Path(file.filename or "upload").suffix or ".xlsx"
+    with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
+        tmp.write(await file.read())
+        import_path = Path(tmp.name)
+    try:
+        result = import_signo_file(import_path)
+    finally:
+        try:
+            import_path.unlink(missing_ok=True)
+        except OSError:
+            pass
     return JSONResponse(result)
 
 
@@ -134,18 +153,64 @@ async def preview_email(request: Request, cliente: str = Form(default=""), docum
 
 
 @app.post("/draft")
-async def create_draft(document_key: str = Form(default=""), email: str = Form(default=""), subject: str = Form(default="Recordatorio de pago")) -> JSONResponse:
+async def create_draft(
+    document_key: str = Form(default=""),
+    email: str = Form(default=""),
+    subject: str = Form(default="Recordatorio de pago"),
+) -> JSONResponse:
     if not document_key:
         raise HTTPException(status_code=400, detail="Documento requerido.")
     document = get_document(document_key)
     if document is None:
         raise HTTPException(status_code=404, detail="Documento no encontrado")
+
     cfg = load_config()
-    service = OutlookDraftService(enabled=bool(cfg.get("outlook_enabled"))) if cfg.get("outlook_enabled") else MockOutlookDraftService(available=True)
-    preview = f"<html><body><p>Asunto: {subject}</p><p>Cliente: {document['cliente']}</p><p>Saldo: S/ {document['saldo_observado']}</p></body></html>"
-    result = service.create_draft(subject, preview, email or document['cliente'])
+    preview = (
+        f"<html><body>"
+        f"<p>Asunto: {subject}</p>"
+        f"<p>Cliente: {document['cliente']}</p>"
+        f"<p>Saldo: S/ {document['saldo_observado']}</p>"
+        f"</body></html>"
+    )
+
+    if not cfg.get("outlook_enabled"):
+        return JSONResponse({
+            "success": False,
+            "preview": preview,
+            "message": "Integración Outlook desactivada. El borrador no fue creado.",
+        })
+
+    if not email or "@" not in email:
+        raise HTTPException(
+            status_code=400,
+            detail="Se requiere un correo electrónico válido como destinatario.",
+        )
+
+    dedupe_key = f"{document_key}|{email}|{subject}"
+    if draft_already_exists(document_key, subject):
+        return JSONResponse({
+            "success": True,
+            "duplicate": True,
+            "message": "Ya existe un borrador para este documento y asunto.",
+            "preview": preview,
+        })
+
+    service = OutlookDraftService(enabled=True)
+    result = service.create_draft(subject, preview, email, dedupe_key=dedupe_key)
+    service.release()
+
     if not result.success:
         return JSONResponse({"success": False, "error": result.error}, status_code=400)
+
+    save_draft_history(
+        document_key=document_key,
+        cliente=document["cliente"],
+        destinatario=email,
+        subject=subject,
+        outlook_message_id=result.message_id or "",
+        draft_status="CREATED",
+        html_preview=preview,
+    )
     return JSONResponse({"success": True, "message_id": result.message_id, "preview": preview})
 
 
@@ -155,9 +220,48 @@ async def backup_db() -> JSONResponse:
     return JSONResponse({"path": str(target)})
 
 
+@app.get("/contacts/{document_key_path}", response_class=JSONResponse)
+async def list_contacts(document_key_path: str) -> JSONResponse:
+    from database import connect as _connect
+    with _connect() as conn:
+        rows = conn.execute(
+            "SELECT * FROM contacts WHERE document_key = ? ORDER BY es_principal DESC, id",
+            (document_key_path,),
+        ).fetchall()
+    return JSONResponse([dict(r) for r in rows])
+
+
+@app.post("/contacts")
+async def upsert_contact(
+    document_key: str = Form(...),
+    nombre: str = Form(default=""),
+    correo: str = Form(default=""),
+    telefono: str = Form(default=""),
+    rol: str = Form(default=""),
+    es_principal: bool = Form(default=False),
+) -> JSONResponse:
+    if correo and "@" not in correo:
+        raise HTTPException(status_code=400, detail="Correo no válido.")
+    from database import connect as _connect
+    with _connect() as conn:
+        conn.execute(
+            """INSERT INTO contacts(document_key, nombre, correo, telefono, rol, es_principal)
+               VALUES (?, ?, ?, ?, ?, ?)
+               ON CONFLICT(document_key, correo) DO UPDATE SET
+                 nombre = excluded.nombre,
+                 telefono = excluded.telefono,
+                 rol = excluded.rol,
+                 es_principal = excluded.es_principal""",
+            (document_key, nombre, correo, telefono, rol, int(es_principal)),
+        )
+    return JSONResponse({"success": True})
+
+
 @app.get("/health")
 async def health() -> JSONResponse:
-    return JSONResponse({"status": "ok", "db": str(get_db_path())})
+    from scheduler import get_scheduler_status
+    sched = get_scheduler_status()
+    return JSONResponse({"status": "ok", "db": str(get_db_path()), "scheduler": sched})
 
 
 if __name__ == "__main__":
